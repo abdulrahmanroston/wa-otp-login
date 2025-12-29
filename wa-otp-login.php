@@ -23,6 +23,29 @@ define('WA_OTP_PATH', plugin_dir_path(__FILE__));
 define('WA_OTP_URL', plugin_dir_url(__FILE__));
 define('WA_OTP_BASENAME', plugin_basename(__FILE__));
 
+
+// ==================== Plugin Update Checker ====================
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+/**
+ * Setup automatic updates from GitHub commits
+ */
+if ( file_exists( WA_OTP_PATH . 'includes/plugin-update-checker-master/plugin-update-checker.php' ) ) {
+    require WA_OTP_PATH . 'includes/plugin-update-checker-master/plugin-update-checker.php';
+    
+    $waOtpUpdateChecker = PucFactory::buildUpdateChecker(
+        'https://github.com/abdulrahmanroston/wa-otp-login/',
+        __FILE__,
+        'wa-otp-login'
+    );
+    
+    // Monitor the main branch for updates directly from commits
+    $waOtpUpdateChecker->setBranch( 'main' );
+}
+
+
+
 /**
  * Main Plugin Class
  */
