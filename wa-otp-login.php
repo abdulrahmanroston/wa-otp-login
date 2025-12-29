@@ -3,7 +3,7 @@
  * Plugin Name: WA OTP Login
  * Plugin URI: https://abdulrahmanroston.com
  * Description: Professional WhatsApp OTP login system with WA Simple Queue integration
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Abdulrahman Roston
  * Author URI: https://abdulrahmanroston.com
  * Requires PHP: 7.4
@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('WA_OTP_VERSION', '1.0.0');
+define('WA_OTP_VERSION', '2.0.1');
 define('WA_OTP_PATH', plugin_dir_path(__FILE__));
 define('WA_OTP_URL', plugin_dir_url(__FILE__));
 define('WA_OTP_BASENAME', plugin_basename(__FILE__));
