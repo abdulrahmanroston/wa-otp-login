@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WA OTP Login
- * Plugin URI: https://tenderfrozen.com
+ * Plugin URI: https://abdulrahmanroston.com
  * Description: Professional WhatsApp OTP login system with WA Simple Queue integration
  * Version: 2.0.0
  * Author: Abdulrahman Roston
